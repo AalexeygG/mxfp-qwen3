@@ -1,0 +1,15 @@
+notes/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+artifacts/
+*.safetensors
+*.bin
+.ipynb_checkpoints/
+slides/
+vendor/
+*.pt
+kaggle/logs*.md
+logs*.md
+*.log

@@ -1,0 +1,10 @@
+torch>=2.4
+transformers>=4.51
+safetensors
+accelerate
+datasets
+numpy
+pandas
+matplotlib
+zstandard
+lm-eval>=0.4.5
