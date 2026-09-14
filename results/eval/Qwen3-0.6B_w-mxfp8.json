@@ -1,0 +1,69 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "weights": "mxfp8",
+  "acts": "none",
+  "tasks": "arc_easy,piqa,winogrande,lambada_openai",
+  "plan": null,
+  "budget": null,
+  "errcomp": null,
+  "search": false,
+  "limit": null,
+  "dtype": "bfloat16",
+  "device": "mps",
+  "seconds": 801.8503789901733,
+  "max_length": 2048,
+  "results": {
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.6115319865319865,
+      "acc_stderr,none": 0.010001276044485077,
+      "acc_norm,none": 0.5542929292929293,
+      "acc_norm_stderr,none": 0.010199118183322836
+    },
+    "piqa": {
+      "name": "piqa",
+      "alias": "piqa",
+      "sample_len": 1838,
+      "acc,none": 0.6713819368879217,
+      "acc_stderr,none": 0.010959127105167173,
+      "acc_norm,none": 0.6713819368879217,
+      "acc_norm_stderr,none": 0.010959127105167173
+    },
+    "winogrande": {
+      "name": "winogrande",
+      "alias": "winogrande",
+      "sample_len": 1267,
+      "acc,none": 0.5761641673243884,
+      "acc_stderr,none": 0.013888492389944529
+    },
+    "lambada_openai": {
+      "name": "lambada_openai",
+      "alias": "lambada_openai",
+      "sample_len": 5153,
+      "perplexity,none": 23.200773612296857,
+      "perplexity_stderr,none": 0.9757162595385032,
+      "acc,none": 0.4075295944110227,
+      "acc_stderr,none": 0.006845812181724504
+    }
+  },
+  "n_samples": {
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "lambada_openai": {
+      "original": 5153,
+      "effective": 5153
+    }
+  }
+}

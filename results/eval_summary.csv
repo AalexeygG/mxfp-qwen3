@@ -1,0 +1,13 @@
+run,model,weights,acts,budget,seconds,arc_easy/acc,arc_easy/acc_stderr,piqa/acc,piqa/acc_stderr,winogrande/acc,winogrande/acc_stderr,lambada_openai/perplexity,lambada_openai/acc,lambada_openai/acc_stderr,arc_easy/acc_norm,arc_easy/acc_norm_stderr,piqa/acc_norm,piqa/acc_norm_stderr,lambada_openai/perplexity_stderr
+Qwen3-4B_bf16,Qwen3-4B,none,none,,,0.8047,0.0081,0.7508,0.0101,0.6598,0.0133,7.2896,0.5969,0.0068,,,,,
+Qwen3-4B_w-mxfp8,Qwen3-4B,mxfp8,none,,,0.8009,0.0082,0.7497,0.0101,0.648,0.0134,7.1643,0.6018,0.0068,,,,,
+Qwen3-4B_w-mxfp8_a-mxfp8,Qwen3-4B,mxfp8,mxfp8,,,0.7992,0.0082,0.747,0.0101,0.6472,0.0134,7.2406,0.5993,0.0068,,,,,
+Qwen3-4B_w-mxfp4,Qwen3-4B,mxfp4,none,,,0.7811,0.0085,0.7356,0.0103,0.6322,0.0136,8.3163,0.5756,0.0069,,,,,
+Qwen3-4B_w-mxfp4_a-mxfp8,Qwen3-4B,mxfp4,mxfp8,,,0.7816,0.0085,0.7345,0.0103,0.6361,0.0135,8.4983,0.5754,0.0069,,,,,
+Qwen3-4B_errcomp-mxfp4_search,Qwen3-4B,mxfp4,none,,,0.7984,0.0082,0.7307,0.0104,0.6559,0.0134,7.4312,0.5931,0.0068,,,,,
+Qwen3-0.6B_bf16,Qwen3-0.6B,none,none,,750.0,0.6082,0.01,0.673,0.0109,0.5572,0.014,24.7113,0.3998,0.0068,0.5598,0.0102,0.6697,0.011,1.0464
+Qwen3-0.6B_errcomp-mxfp4_search,Qwen3-0.6B,none,none,,792.0,0.5109,0.0103,0.6491,0.0111,0.5462,0.014,31.8952,0.3714,0.0067,0.4676,0.0102,0.6551,0.0111,1.4106
+Qwen3-0.6B_errcomp-mxfp4_search_c4,Qwen3-0.6B,none,none,,570.0,0.5194,0.0103,,,,,29.9979,0.3695,0.0067,0.4731,0.0102,,,1.2935
+Qwen3-0.6B_w-mxfp4,Qwen3-0.6B,mxfp4,none,,774.0,0.5362,0.0102,0.6485,0.0111,0.5643,0.0139,39.261,0.3522,0.0067,0.4979,0.0103,0.6436,0.0112,1.7973
+Qwen3-0.6B_w-mxfp8,Qwen3-0.6B,mxfp8,none,,802.0,0.6115,0.01,0.6714,0.011,0.5762,0.0139,23.2008,0.4075,0.0068,0.5543,0.0102,0.6714,0.011,0.9757
+Qwen3-0.6B_w-mxfp8_a-mxfp8,Qwen3-0.6B,mxfp8,mxfp8,,2951.0,0.6136,0.01,0.6643,0.011,0.5525,0.014,23.386,0.4087,0.0068,0.5518,0.0102,0.6649,0.011,0.9832

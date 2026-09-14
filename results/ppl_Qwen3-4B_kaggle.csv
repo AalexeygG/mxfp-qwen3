@@ -1,0 +1,12 @@
+model,config,weights,acts,method,ppl,seconds,source
+Qwen3-4B,bf16,none,none,none,15.1675,42,kaggle T4 float16
+Qwen3-4B,w-mxfp8,mxfp8,none,none,15.4091,46,kaggle T4 float16
+Qwen3-4B,w-mxfp4,mxfp4,none,none,16.4830,47,kaggle T4 float16
+Qwen3-4B,w-mxfp8_a-mxfp8,mxfp8,mxfp8,none,15.7063,81,kaggle T4 float16
+Qwen3-4B,w-mxfp4_a-mxfp8,mxfp4,mxfp8,none,16.7638,82,kaggle T4 float16
+Qwen3-4B,a-mxfp8,none,mxfp8,none,15.5304,77,kaggle T4 float16
+Qwen3-4B,a-mxfp4,none,mxfp4,none,17.7002,77,kaggle T4 float16
+Qwen3-4B,w-mxfp4_search,mxfp4,none,exponent search,16.3503,54,kaggle T4 float16
+Qwen3-4B,w-mxfp8_search,mxfp8,none,exponent search,15.1560,54,kaggle T4 float16
+Qwen3-4B,errcomp-mxfp4,mxfp4,none,error compensation,15.7037,1744,kaggle T4 float16
+Qwen3-4B,errcomp-mxfp4_search,mxfp4,none,error compensation and exponent search,15.5000,1767,kaggle T4 float16

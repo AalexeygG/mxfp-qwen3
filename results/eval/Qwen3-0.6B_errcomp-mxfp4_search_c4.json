@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "weights": "none",
+  "acts": "none",
+  "tasks": "arc_easy,lambada_openai",
+  "plan": null,
+  "budget": null,
+  "errcomp": "mxfp4",
+  "search": true,
+  "calib_source": "c4",
+  "limit": null,
+  "dtype": "bfloat16",
+  "device": "mps",
+  "seconds": 570.0972590446472,
+  "max_length": 2048,
+  "results": {
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.5193602693602694,
+      "acc_stderr,none": 0.010252089491165312,
+      "acc_norm,none": 0.4730639730639731,
+      "acc_norm_stderr,none": 0.010244884740620078
+    },
+    "lambada_openai": {
+      "name": "lambada_openai",
+      "alias": "lambada_openai",
+      "sample_len": 5153,
+      "perplexity,none": 29.99786819414606,
+      "perplexity_stderr,none": 1.2934733070901019,
+      "acc,none": 0.3694934989326606,
+      "acc_stderr,none": 0.006724504027913205
+    }
+  },
+  "n_samples": {
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "lambada_openai": {
+      "original": 5153,
+      "effective": 5153
+    }
+  }
+}

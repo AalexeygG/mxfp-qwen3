@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "weights": "none",
+  "acts": "none",
+  "plan": null,
+  "search": false,
+  "errcomp": null,
+  "budget": null,
+  "nwin": 16,
+  "seqlen": 1024,
+  "ppl": 16.849525451660156,
+  "bits_per_value": null,
+  "seconds": 335.91480803489685
+}

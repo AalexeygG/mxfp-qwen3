@@ -1,0 +1,7 @@
+model,config,weights,acts,method,arc_easy_acc,arc_easy_acc_stderr,piqa_acc,piqa_acc_stderr,winogrande_acc,winogrande_acc_stderr,lambada_ppl,lambada_acc,lambada_acc_stderr,source
+Qwen3-4B,bf16,none,none,none,0.8047,0.0081,0.7508,0.0101,0.6598,0.0133,7.2896,0.5969,0.0068,kaggle T4 float16
+Qwen3-4B,w-mxfp8,mxfp8,none,none,0.8009,0.0082,0.7497,0.0101,0.6480,0.0134,7.1643,0.6018,0.0068,kaggle T4 float16
+Qwen3-4B,w-mxfp8_a-mxfp8,mxfp8,mxfp8,none,0.7992,0.0082,0.7470,0.0101,0.6472,0.0134,7.2406,0.5993,0.0068,kaggle T4 float16
+Qwen3-4B,w-mxfp4,mxfp4,none,none,0.7811,0.0085,0.7356,0.0103,0.6322,0.0136,8.3163,0.5756,0.0069,kaggle T4 float16
+Qwen3-4B,w-mxfp4_a-mxfp8,mxfp4,mxfp8,none,0.7816,0.0085,0.7345,0.0103,0.6361,0.0135,8.4983,0.5754,0.0069,kaggle T4 float16
+Qwen3-4B,errcomp-mxfp4_search,mxfp4,none,error compensation and exponent search,0.7984,0.0082,0.7307,0.0104,0.6559,0.0134,7.4312,0.5931,0.0068,kaggle T4 float16

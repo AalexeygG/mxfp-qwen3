@@ -1,0 +1,4 @@
+model,config,weights,acts,method,arc_easy_acc,arc_easy_acc_stderr,lambada_ppl,lambada_acc,lambada_acc_stderr,source
+Qwen3-14B,bf16,none,none,none,0.8418,0.0075,3.6718,0.6812,0.0065,kaggle 2xT4 float16
+Qwen3-14B,w-mxfp8,mxfp8,none,none,0.8430,0.0075,3.6737,0.6812,0.0065,kaggle 2xT4 float16
+Qwen3-14B,w-mxfp4,mxfp4,none,none,0.8279,0.0077,4.0009,0.6660,0.0066,kaggle 2xT4 float16

@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "weights": "none",
+  "acts": "none",
+  "plan": "results/plans_Qwen3-0.6B.json",
+  "budget": "4.5",
+  "nwin": 16,
+  "seqlen": 1024,
+  "ppl": 34.97383499145508,
+  "bits_per_value": 4.453455389113653,
+  "seconds": 47.16376304626465
+}
