@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "weights": "mxfp4",
+  "acts": "none",
+  "plan": null,
+  "search": false,
+  "errcomp": null,
+  "budget": null,
+  "nwin": 32,
+  "seqlen": 512,
+  "ppl": 11.147917747497559,
+  "dtype": "float16",
+  "device_map": "auto",
+  "bits_per_value": null,
+  "seconds": 302.22474360466003
+}

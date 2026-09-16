@@ -1,6 +1,6 @@
 model,config,weights,acts,method,ppl,seconds,source
-Qwen3-14B,bf16,none,none,none,10.3523,332,kaggle 2xT4 float16
-Qwen3-14B,w-mxfp8,mxfp8,none,none,10.3966,343,kaggle 2xT4 float16
-Qwen3-14B,w-mxfp8_a-mxfp8,mxfp8,mxfp8,none,10.4643,371,kaggle 2xT4 float16
-Qwen3-14B,w-mxfp4,mxfp4,none,none,11.1479,342,kaggle 2xT4 float16
-Qwen3-14B,w-mxfp4_a-mxfp8,mxfp4,mxfp8,none,11.2348,372,kaggle 2xT4 float16
+Qwen3-14B,bf16,none,none,none,10.3523,332,kaggle 2xT4 float16 (run artifact)
+Qwen3-14B,w-mxfp8,mxfp8,none,none,10.3966,343,kaggle 2xT4 float16 (run artifact)
+Qwen3-14B,w-mxfp8_a-mxfp8,mxfp8,mxfp8,none,10.4643,371,kaggle 2xT4 float16 (from run log)
+Qwen3-14B,w-mxfp4,mxfp4,none,none,11.1479,342,kaggle 2xT4 float16 (run artifact)
+Qwen3-14B,w-mxfp4_a-mxfp8,mxfp4,mxfp8,none,11.2348,372,kaggle 2xT4 float16 (from run log)

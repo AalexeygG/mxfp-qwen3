@@ -17,10 +17,13 @@ Qwen3-0.6B_ours-4.2,Qwen3-0.6B,none,none,,False,4.2,4.118925421578544,36.6821441
 Qwen3-1.7B_bf16,Qwen3-1.7B,none,none,,False,,16.0,16.849525451660156,336
 Qwen3-1.7B_w-mxfp8,Qwen3-1.7B,mxfp8,none,,False,,8.25,17.589824676513672,323
 Qwen3-1.7B_w-mxfp4,Qwen3-1.7B,mxfp4,none,,False,,4.25,21.726282119750977,346
+Qwen3-14B_bf16,Qwen3-14B,none,none,,False,,16.0,10.35226058959961,293
 Qwen3-14B_bf16,Qwen3-14B,none,none,,False,,16.0,10.3523,332
 Qwen3-14B_w-mxfp8,Qwen3-14B,mxfp8,none,,False,,8.25,10.3966,343
+Qwen3-14B_w-mxfp8,Qwen3-14B,mxfp8,none,,False,,8.25,10.396627426147461,303
 Qwen3-14B_w-mxfp8_a-mxfp8,Qwen3-14B,mxfp8,mxfp8,,False,,8.25,10.4643,371
 Qwen3-14B_w-mxfp4,Qwen3-14B,mxfp4,none,,False,,4.25,11.1479,342
+Qwen3-14B_w-mxfp4,Qwen3-14B,mxfp4,none,,False,,4.25,11.147917747497559,302
 Qwen3-14B_w-mxfp4_a-mxfp8,Qwen3-14B,mxfp4,mxfp8,,False,,4.25,11.2348,372
 Qwen3-4B_w-mxfp8_search,Qwen3-4B,mxfp8,none,,True,,8.25,15.156,54
 Qwen3-4B_bf16,Qwen3-4B,none,none,,False,,16.0,15.1675,42
