@@ -82,6 +82,20 @@ def quantize_compensated(w, elem_format, h, block=BLOCK, damp=0.01, search=False
     return q
 
 
+def real_weight(m):
+    """Offloaded modules hold a meta placeholder, the data lives in the accelerate hook."""
+    w = m.weight.data
+    if not w.is_meta:
+        return w
+    wm = getattr(getattr(m, "_hf_hook", None), "weights_map", None)
+    if wm is None:
+        raise RuntimeError(
+            "weight is on the meta device and no accelerate hook carries its data. "
+            "Error compensation needs the real weights, so run it on a device that "
+            "fits the model without offload.")
+    return wm["weight"]
+
+
 def _run(w, h, ef, damp, search):
     """Solve on the weight's own GPU when it fits, fall back to cpu on an allocation failure."""
     if w.device.type == "cuda":
@@ -112,6 +126,14 @@ def apply_compensated(model, calib_ids, fmt, device, group=2, nsamples=16, seqle
 
     ef = FORMATS[fmt]
     mods = target_linears(model)
+    offloaded = [n for n, m in mods if m.weight.data.is_meta
+                 and getattr(getattr(m, "_hf_hook", None), "weights_map", None) is None]
+    if offloaded:
+        raise RuntimeError(
+            f"{len(offloaded)} of {len(mods)} weights are on the meta device with no data behind "
+            f"them, first is {offloaded[0]}. Error compensation reads every weight directly, so "
+            f"it needs the model to fit without offload. Check this before the run rather than "
+            f"after, it costs hours on a large model.")
     layers = sorted({_layer_index(n) for n, _ in mods if _layer_index(n) >= 0})
     t0 = time.time()
 
@@ -142,7 +164,7 @@ def apply_compensated(model, calib_ids, fmt, device, group=2, nsamples=16, seqle
             h.remove()
 
         for n, m in todo:
-            w = m.weight.data
+            w = real_weight(m)
             h = hs[n].finish()
             q = _run(w, h, ef, damp, search)
             m.weight.data = q.to(device=w.device, dtype=w.dtype)
